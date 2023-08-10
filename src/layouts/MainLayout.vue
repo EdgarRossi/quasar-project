@@ -3,7 +3,13 @@
     <q-header elevated class="bg-cyan-8">
       <q-toolbar>
         <q-toolbar-title>Header</q-toolbar-title>
-        <q-btn flat @click="drawer = !drawer" round dense icon="menu" />
+        <q-btn
+          flat
+          @click="drawer = !drawer"
+          round
+          dense
+          icon="las la-chevron-circle-down"
+        />
       </q-toolbar>
     </q-header>
 
@@ -18,7 +24,7 @@
         <q-list padding>
           <q-item clickable v-ripple to="/" active-class="my-menu-link" exact>
             <q-item-section avatar>
-              <q-icon name="inbox" />
+              <q-icon name="las la-voicemail" />
             </q-item-section>
 
             <q-item-section> Inbox </q-item-section>
@@ -26,7 +32,7 @@
 
           <q-item clickable v-ripple to="/about" active-class="my-menu-link">
             <q-item-section avatar>
-              <q-icon name="star" />
+              <q-icon name="las la-star" />
             </q-item-section>
 
             <q-item-section> About </q-item-section>
@@ -34,7 +40,7 @@
 
           <q-item clickable v-ripple to="/form" active-class="my-menu-link">
             <q-item-section avatar>
-              <q-icon name="star" />
+              <q-icon name="las la-star" />
             </q-item-section>
 
             <q-item-section> Form </q-item-section>
